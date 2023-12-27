@@ -1,0 +1,461 @@
+/*** HTML ***/
+
+@font-face {
+    font-family: DarkerG;
+    src: url(Files/Darker_Grotesque/DarkerGrotesque-VariableFont_wght.ttf);
+}
+
+html {
+    font-family: DarkerG;
+    font-size: 96px;
+}
+
+h1 {
+    font-size: 100%;
+    font-weight: 700;
+    color: white;
+    line-height: 130.18px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 50%;
+    font-weight: 700;
+    line-height: 65.09px;
+    color: #DEB959;
+}
+
+h3 {
+    font-size: 35.4%;
+    font-weight: 700;
+    line-height: 46.1px;
+    color: white;
+}
+
+
+
+
+
+/*** CLASSES HEADER E FOOTER ***/
+
+
+.top {
+    background-color: #F5A4E5;
+    width: 100%;
+    height: 130px;
+    font-size: 31.2%;
+    font-weight: 700;
+    display: flex;
+    flex: center;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.bottom {
+    background-color: #333333;
+    color: white;
+    font-size: 18.7%;
+    font-weight: 400;
+    width: 100%;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.barra {
+    background-color: #333333;
+    width: 100%;
+    height: 5px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.link {
+    text-decoration: none;
+    color: #333333;
+    opacity: 1;
+}
+
+.link:hover .barra {
+    opacity: 1;
+}
+
+.logo {
+    width: 130px;
+}
+
+.gradiente {
+    width: 100%;
+    height: 5px;
+    background-image: linear-gradient(to right,#DEB959,#2C5680);
+}
+
+.texto_footer {
+    width: 346px;
+    margin: 0px 0px 0px 10px;
+}
+
+.contato {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 21px;
+    align-items: center;
+}
+
+.quem_somos_amarelo {
+    width: 144px;
+    height: 30px;
+    background-color: #DEB959;
+    font-size: 25px;
+    font-weight: 700;
+    color: #333333;
+    text-align: center;
+    margin: 0px 0px 0px 20px;
+}
+
+.coração {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+    margin: 0px 12% 0px 0px;
+}
+
+.devcom {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.41px;
+}
+
+
+
+
+/*** CLASSES MAIN ***/
+
+.lobo_grande {
+    height: 500px;
+    width: 100%;
+}
+
+.lobao {
+    height: 540px;
+    background-image: url(Files/lobo_grande.png);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-flow: column wrap;
+    align-content: space-evenly;
+    justify-content: center;
+}
+
+.biglink {
+    display: flex;
+    flex-flow: column wrap;
+    text-decoration: none;
+    align-items: center;
+    align-content: space-evenly;
+    transform: translateY(-30px)
+}
+
+.whitebar {
+    height: 5px;
+    width: 130px;
+    background-color: white;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.biglink:hover .whitebar {
+    opacity:1;
+}
+
+
+.front_text {
+    font-size: 31%;
+    font-weight: 400;
+    line-height: 25px;
+    width: 42%;
+    text-align: center;
+    color: white;
+}
+
+.sobre {
+    background-color: #2C5680;
+    width: 100%;
+    height: 333px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sobre_text {
+    font-size: 25%;
+    line-height: 32.54px;
+    text-align: center;
+    color: white;
+    width: 960px;
+}
+
+.valores {
+    background-color: #333333;
+    width: 100%;
+    height: 560px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.valor_row{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+}
+
+.valor_foto {
+    align-items: flex-start;
+}
+
+.texto_valores {
+    color: white;
+    width: 195px;
+    font-size: 27%;
+    font-weight: 400;
+    text-align: center;
+    line-height: 20px;
+}
+
+.valores_title {
+    background-color: #333333;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+
+
+
+
+
+/*** @MEDIA ***/
+
+@media(max-width: 1440px){
+    html {
+        font-size: 80px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+}
+
+
+@media(max-width: 1100px){
+    h1 {
+        font-size: 60px;
+    }
+}
+
+
+@media(max-width: 900px){
+
+    h1 {
+        line-height: 70px;
+    }
+
+    html {
+        font-size: 70px;
+    }
+
+    .front_text {
+        width: 310px;
+    }
+
+    .valor_foto {
+        width: 100px
+    }
+
+    .bottom {
+        height: 540px;
+    }
+
+    .sobre_text{
+        width: 370px;
+    }
+
+    .sobre{
+        height: 500px;
+    }
+
+}
+
+
+.lobotext {
+    font-size: 24px;
+    width: 461px
+}
+
+
+.image img{
+    box-shadow:-30px -30px 0px #2C5680;
+    border: 4px solid #333333;
+    width: 100%;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adotar{
+    background: #7AAC3A;
+    color: #FFFFFF;
+}  
+
+.excluir{
+    background: #DE5959;
+    color: #FFFFFF;
+
+}
+
+.nomelobo {
+    font-size: 36px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.idadelobo {
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.nomelobo2 {
+    font-size: 36px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.idadelobo2 {
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0% 0% 10% 0%;
+    gap: 200px;
+}
+
+.box p{
+    text-align: center;
+
+}
+
+.text{
+    width: 30%;
+    height: 45%;
+    font-size: 1.3rem;
+    text-align: start;
+}
+.text p{
+    text-align: left;
+}
+
+.title{
+    font-size: 2rem;
+    text-align: center;
+    margin: 3% 0%;
+    font-family: Roboto;
+
+}
+
+.boxtitle{
+    display: flex;
+    justify-content: center;
+}
+
+
+.exemplostitle {
+    display:flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+@media(max-width: 420px){
+    html {
+        font-size: 50px;
+    }
+
+    .quem_somos_amarelo {
+        width: 80px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .sobre_text{
+        width: 300px;
+    }
+
+    .sobre {
+        height: 500px
+    }
+
+    .texto_valores{
+        width: 140px;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .lobo_grande {
+        height: 500px;
+        display: flex;
+    }
+
+    .lista_informação {
+        width: 300px
+    }
+
+    .box {
+        flex-flow: column wrap;
+    }
+
+    .lobotext {
+        font-size: 16px;
+        width: 180%;
+    }
+
+    .image img{
+        width: 60%;
+    }
+
+    
+
+}
