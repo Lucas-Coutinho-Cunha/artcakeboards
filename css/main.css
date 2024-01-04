@@ -1,0 +1,131 @@
+
+/* MAIN PAGE CSS SETTINGS */
+
+html {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 54px;
+    color: #153178;
+}
+
+h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #222;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    padding: 40px 0;
+}
+
+body {
+    width: 100%;
+}
+
+#hero {
+    background-image: url("../img/hero1.png");
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero button {
+    background-image: url("../img/button1.png");
+    background-color: transparent;
+    border: 0;
+    padding-top: 18px;
+    padding-bottom: 22px;
+    padding-right: 23px;
+    padding-left: 23px;
+    background-repeat: no-repeat;
+    font-size: 18px;
+}
+
+
+/* FEATURED */
+
+#features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#features .fe-box{
+    width: 220px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#features .fe-box h6{
+    display: inline-block;
+    padding: 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #720c0c;
+    background-color: #f5b7b7;
+}
+
+#features .fe-box:nth-child(2) h6{
+    color: #72630c;
+    background-color: #faf99d;
+}
+
+#features .fe-box:nth-child(3) h6{
+    color: #0c7242;
+    background-color: #b7f5ca;
+}
+
+#features .fe-box:nth-child(4) h6{
+    color: #0c3172;
+    background-color: #b7d1f5;
+}
+
+#features .fe-box:nth-child(5) h6{
+    color: #6f0c72;
+    background-color: #edb7f5;
+}
+
+#features .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#features .fe-box:hover{
+    box-shadow: 7px 7px 50px rgba(70, 60, 220, 0.2);
+}

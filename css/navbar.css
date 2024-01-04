@@ -1,50 +1,5 @@
-html {
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
-h1 {
-    font-size: 50px;
-    line-height: 64px;
-    color: #222;
-}
-
-h2 {
-    font-size: 46px;
-    line-height: 54px;
-    color: #222;
-}
-
-h4 {
-    font-size: 20px;
-    color: #222;
-}
-
-h6 {
-    font-size: 12px;
-    font-weight: 700;
-}
-
-p {
-    font-size: 16px;
-    color: #465b52;
-    margin: 15px 0 20px 0;
-}
-
-.section-p1 {
-    padding: 40px 80px;
-}
-
-.section-m1 {
-    padding: 40px 0;
-}
-
-body {
-    width: 100%;
-}
-
-
-/***** HEADER *****/
+/* NAVBAR CSS SETTINGS, IMPORT IN EVERY PAGE */
 
 .logo {
     width: 100px;
@@ -57,6 +12,10 @@ header {
     padding: 10px 80px;
     background: #ffd1e7;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
 
 #navbar {
@@ -78,19 +37,19 @@ header {
     transition: 0.3s ease;
 }
 
-.barLoja {
+.barInic {
     height: 3px;
     margin-top: 5px;
-    width: 37px;
+    width: 50px;
     background-color: #f74d9f;
     opacity: 0;
     transition: 0.3s;
 }
 
-.barBlog {
+.barComp {
     height: 3px;
     margin-top: 5px;
-    width: 40px;
+    width: 80px;
     background-color: #f74d9f;
     opacity: 0;
     transition: 0.3s;
@@ -99,7 +58,7 @@ header {
 .barCont {
     height: 3px;
     margin-top: 5px;
-    width: 158px;
+    width: 73px;
     background-color: #f74d9f;
     opacity: 0;
     transition: 0.3s;
@@ -109,11 +68,11 @@ header {
     color: #f74d9f
 }
 
-#navbar li a:hover .barLoja{
+#navbar li a:hover .barInic{
     opacity: 1;
 }
 
-#navbar li a:hover .barBlog{
+#navbar li a:hover .barComp{
     opacity: 1;
 }
 
